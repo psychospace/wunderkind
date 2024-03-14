@@ -1,0 +1,316 @@
+:: StoryTitle
+Wunderkind
+
+
+:: StoryData
+{
+  "ifid": "0241520A-0936-4CFC-96BD-41FF9EF01072",
+  "format": "Chapbook",
+  "format-version": "1.2.3",
+  "start": "START",
+  "zoom": 0.6
+}
+
+
+:: Arnecca parenthetical {"position":"1325,600","size":"100,100"}
+
+
+
+:: Bedroom {"position":"1675,375","size":"200,200"}
+[if  _bedroomclean]
+It looked better. Not great, but better, *all that is holy*.
+
+[continue]
+Her space was madness, but it was home, and it was hers, and to Dorie, that was good enough most days.
+
+Hardly what one would know as the bedroom of a mythological witch...
+
+***
+[if hasGlasses]
+
+{embed passage:'Bedroom State'}
+
+[else]
+The room was filled with landmines. With *stuff*. Everything else is a blur...
+
+
+
+[unless hasGlasses]
+> [[Where's her glasses...]]
+[if hasGlasses; unless _sozusaved]
+>[[Investigate sound.->Sozu's prison]]
+[if hasGlasses; unless _calendarmarked]
+>[[Mark the date.->Bedroom calendar]]
+
+
+
+
+:: Bedroom Mess {"position":"1900,1325","size":"100,100"}
+
+
+
+:: Bedroom State {"position":"1600,900","size":"100,100"}
+
+{embed passage:'Bedside Table Description'}
+
+* A half-dozen half-finished humanoid shapes lay across the ground, [[poppets]] she probably should have worked on in her craft room.
+
+{embed passage:'Mess Description'}
+
+* There was also a [[crate]] against the back wall: it {reveal link: 'had something written on it', text:'was affectionately labeled “*for scarecrows*”.'} 
+
+[NOTE]
+REMINDERS!
+[continue]
+
+[unless _sozusaved]
+What got her attention most was the soft clanging of something banging around, Something MOVING. Something... struggling. 
+
+[unless _calendarmarked]
+She yearned to start her day...
+
+
+
+:: Bedroom calendar {"position":"1875,775","size":"100,100"}
+The calendar on the wall was enshrined in leather. It *was* a real calendar. Though Dorie didn't know quite how it kept extending on and on...
+
+The date was the midst of Alssad, '84. Middle of summer, and middle of the year, almost to the day.
+
+[if _calendarmarked]
+
+
+
+[else]
+> [[Mark the date.]]
+
+[continue]
+> {back link, label: 'Back to the bedroom...'}
+
+
+:: Bedroom candle {"position":"1762.5,1200","size":"100,100"}
+
+
+
+:: Bedside Table Description {"position":"1475,1050","size":"100,100"}
+Besides an open [[window->Witch's bedroom window]] was the witch's ratty cotton [[bed->Witch's bed]]. 
+
+On her [[bedside table]],
+
+[if _candlelit; append]
+ the witch had left a [[candle->Bedroom candle]] burning, marking the hours of rest she'd gotten. It's brighter now. 
+[else]
+ the candle had been extinguished. No more danger of it burning the house down.
+
+A [[calendar->Bedroom calendar]] on the wall over it marked the date... middle of summer.
+
+
+:: Call her name {"position":"850,400","size":"100,100"}
+*...It came through pained, haggard breaths. He wants to hold her in his embrace. Can't muster the strength. Lung tissue slowly healing.*
+
+*The name {reveal link: 'has a vise grip on her', text: 'was something he gave her'}. It's burned in her memory. The way he said it.*
+
+*"{text input for: 'yourName'}..." his voice trembled. "What... happened...?"*
+
+*How did either of them survive, he wants to ask.*
+
+*Her **first name** triggers something in her. In the haze and panic of the moment, she thinks she speaks to her patient.*
+
+*[["I'm sorry,"->She had to go]] she said. The last words between them.*
+
+>[[The memory hurts... enough...->Wake up]]
+
+
+:: Check the time... {"position":"1450,600","size":"100,100"}
+_bedroomclean: false
+_candlelit: true
+_calendarmarked: false
+_boxonfloor: true
+_messyfloor: true
+_sozusaved: false
+--
+The witch's head turned. Half-heartedly noting the marks on the wax of her still-burning **candle**, the witch knew that she’d barely gotten a wink of rest, but had stirred at her normal time. 
+
+A creature of pure habit.
+
+Her fingers were searching the side-table for her glasses. The room was filled with darkened, blurry shapes. The house had woken up, but certainly not her, and certainly not this room.
+
+She sighed, raised a hand...
+
+> [[and made the candle brighter]].
+
+
+:: Mark the date. {"position":"2000,900","size":"100,100"}
+Passing on feeling any kind of grim accomplishment, she glanced aside, picked up a feather, dipped it in one of the not-overturned inkwells, and marked the calendar with the date. If she was counting right, it was the Night to the ides… which meant one more night ‘til a whole year since she’d taken up residence in this place as the witch of the plains.
+
+She sighed. This would not be the day for mischief as she had hoped.
+
+Today was going to need to be a day of preparation, both for the house and herself.
+
+She knew well from the cobwebbed books that adorned her shelves that the date of major events, usually of horrific circumstances like the one she’d been narrowly rescued from, tend to cause significant deviations in one’s magical potential. “Magic is a creation of the mind, after all, and if the mind is disturbed or compromised, so is its power,” or so the mantra went.
+
+[todo]
+complete section
+
+
+:: Mess Description {"position":"1825,950","size":"100,100"}
+[if _messyfloor]
+* Instead of walkable space, objects from [[last night’s experimentation]] were strewn about the creaking darkwood floor.  Potion bottles, feathers, bundles of loose hay and cloth; ink, alcohol, and alcohol-stained paper were the few of the [[random shit->Bedroom Mess]] she could name by sight. The rest might take more time to explain.
+
+[else]
+* *The mess had been managed*, the wrath of [[last night’s experimentation]] allowed to begin to heal. Objects were stowed away, the cloths packed neatly into a shoebox under the bed, the bottles either cleaned up or disposed of. Still in need of a deeper clean, but significantly less depressing.
+
+
+:: S1 {"position":"1250,300","size":"200,100"}
+hasGlasses: false
+hands: 'empty'
+--
+And so she did.
+
+***
+
+The house was already well-enough awake by the time the **witch**’s head rose off her pillow. 
+
+Amid the clattering of self-washing [[Arneccan->Arnecca parenthetical]] cookware in the other room, and the milling about and gentle cooing of her pets in the rafters, she was awakened by the chiming of pipe bells over all: her home’s alarm system. A returning raven had rung two of them, going high to low; from the sound alone, she knew she had been sent an offering. 
+
+*Oh joy.* Let's hope this one isn't a firecracker.
+
+A subsiding night wind carried the smell of freshly planted staple crops in through the open windows of the darkened ranch house. The whole space was immersed in pastoral verve and wordless nostalgia.
+
+{reveal link: 'Arcsend Ranch', text: '*Home*'}.
+
+> [[Check the time...]]
+
+
+:: START {"position":"750,300","size":"200,100"}
+yourName: 'Johanna'
+
+--
+
+*A dark chill.*
+
+[after 1 second; append]
+*A loud **bang**. A yelping noise, from the yard.*
+
+[after 3 second; append]
+*Her young heart pounding in her ears.* 
+
+[after 5 seconds]
+*A knife. A closet. Something staring back. A hand clasped tightly around hers. A burning world. A lake. And... {reveal link:'The only survivor', text:'~~[[him]]~~'}.*
+
+[after 7 seconds]
+A clattering in her soul pierces the void. Alarm rising and falling. Ding. Dong. 
+
+The darkness around her threatens to fade...
+
+[continue]
+> [[She keeps sleeping...->him]]
+> [[Who is she...?->Call her name]]
+> [[Wake up<-She doesn't need to hear this again... wake up...]] 
+
+
+:: She had to go {"position":"850,500","size":"100,100"}
+*She turns. The man fades into darkness.*
+
+[after 3 seconds; append]
+*Then, she takes her first step away.*
+
+[after 5 seconds; append]
+*Her [[instantaneous movement]] carves a line through the fields.* 
+
+[after 7 seconds; append]
+*Then, she takes her second step. She's already miles away. The third. The fourth. One foot in front of the other...*
+
+[continue]
+> [[Wake up<-...and she's lying in bed...]] 
+
+
+:: Sozu's prison {"position":"1875,650","size":"100,100"}
+
+
+
+:: Wake up {"position":"950,300","size":"100,100"}
+She wants to wake up. She wants to.
+
+Better not, her subconscious memory whines. Ten gold says you'll not like what you see.
+
+> [[She's been through worse, though.->S1]]
+> {back link, label:'Wait... what was that, before...?'}
+
+
+:: Where's her glasses... {"position":"1725,225","size":"100,100"}
+
+hasGlasses: true
+--
+
+They were right where she left them. Of course they were. Her pair of hexagonal glasses lied dejected on her bedside table, right next to the candle. A splotch of something purple across the sineglass lenses had her wiping them down with the edge of her ratty covers. 
+
+*Gods of all. I need to clean the craft room, too,* she groaned silently.
+
+The glasses fit too snugly over the bridge of her nose. But at least she could see. At least she could work...
+
+> [[Bedroom<-Now to surveill the mess at hand.]]
+
+
+:: Witch's bed {"position":"1512.5,1200","size":"100,100"}
+
+
+
+:: Witch's bedroom window {"position":"1387.5,1200","size":"100,100"}
+
+
+
+:: and made the candle brighter {"position":"1450,725","size":"100,100"}
+Like second nature, her groggy voice spoke aloud, "~~UMARI.~~" The candle's flame glowed ever-brighter.
+
+Her mind filled with a shock of pain. Splitting hangover. Blinded by light. 
+
+The faint glimpse of the room surrounding her pushed the witch into a silent moment of contempt and contemplation for her own terrible sense of forethought.
+
+Her personal space was more disarray than array at this point: an impressive work of slovenliness, considering how much space she had to herself. Were the witch someone else, she would not know how she could make such a mess, especially after having cleaned the space a bit, only a few days prior. Or was that weeks, at this point? 
+
+She’d not seen much of a reason to keep the house tidy, given… well, a decidedly well-founded distaste for {reveal link: 'you-know-what', text: 'unplanned visits'}. But now she was left with the results of her inaction.
+
+>[[Oh, *gods*. How bad could it be?->Bedroom]]
+
+
+:: bedside table {"position":"1475,1425","size":"100,100"}
+
+
+
+:: crate {"position":"1950,525","size":"100,100"}
+A dozen sets of moth-eaten and wind-tattered spellcraft robes was posed as backdrop, like a laundry basket, to add insult to injury. 
+
+These were leftovers from {reveal link: 'the last handful of weeks', text: 'the slow process of reinforcing the farm’s protections with long treks around the perimeter'}. The spellcraft robes were piled high in a wooden crate shoved against the opposite wall, which she’d needed to move elsewhere for some time.
+
+> {back link, label: 'Back to the bedroom...'}
+
+
+:: him {"position":"750,400","size":"100,100"}
+*Her hands on his chest. A universe dividing between them. His warmth returns. Her prayers are answered. A wound closes. Patching him up.* 
+
+*His eyes flutter open. Delirious. Mumbling something. {reveal link:'Like a bad hangover...', passage: 'parenthetical1'}*
+
+*But... [[She had to go]], or he'd never be safe again.*
+
+> [[Wake up<-Not this again... Wake up...]] 
+
+
+:: instantaneous movement {"position":"950,400","size":"100,100"}
+*...The {reveal link:'pair of devices', text:'boots'} are laced just a little too tight around her ankles. Nagging at her. They've always been a loose fit... But she's stressed now. Hurts her legs to run...*
+
+
+*But she knows she needs to... and doesn't know where... She vanishes into the background...*
+
+> [[Wake up<-I need to wake up.]]
+
+
+:: last night’s experimentation {"position":"1775,1325","size":"100,100"}
+
+
+
+:: parenthetical1 {"position":"750,500","size":"100,100"}
+Just enough to recognize her. [[Call her name]]. She wishes he hadn't.
+
+
+:: poppets {"position":"1950,1100","size":"100,100"}
+
