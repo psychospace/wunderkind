@@ -7,16 +7,61 @@ Wunderkind
   "ifid": "0241520A-0936-4CFC-96BD-41FF9EF01072",
   "format": "Chapbook",
   "format-version": "1.2.3",
-  "start": "START",
-  "zoom": 0.6
+  "start": "INITIALIZE",
+  "tag-colors": {
+    "ending": "red"
+  },
+  "zoom": 1
 }
 
 
-:: Arnecca parenthetical {"position":"1325,600","size":"100,100"}
+:: !BAD FOR YOU ENDING [ending] {"position":"5325,750","size":"200,100"}
+[NOTE]
+The witch completes Hanna's marriage to Vulpe, glamoured as Hanna. When the Witch later vanishes, she has led Hanna into a dangerous unhealthy relationship...
+[continue]
+
+
+:: !BAD PERSON ENDING? [ending] {"position":"5325,875","size":"200,100"}
+[NOTE]
+The witch completes Hanna's marriage to Vulpe, as Vulpe, but has not confronted her. When the Witch later vanishes (either with or without revealing the deception), she feels genuine guilt, as Hanna is a kind girl, and Vulpe... is not a kind man.
+[continue]
 
 
 
-:: Bedroom {"position":"1675,375","size":"200,200"}
+:: !FALSE LOVE ENDING [ending] {"position":"5325,625","size":"200,100"}
+[NOTE]
+Vulpe was cursed. However, the wedding still completes. Hanna’s admission of love for Vulpe is revealed to be insincere (the curse did not stop it). The Witch realizes that Hanna did not cause her exile.
+[continue]
+
+
+:: !REAPING ENDING {"position":"2775,400","size":"100,100"}
+
+
+
+:: !REQUIEM (TRUE ENDING) [ending] {"position":"5325,1050","size":"200,100"}
+[NOTE]
+The witch and Hanna are married to each other, and run away together.
+[continue]
+
+
+:: !TERRIBLE ENDING [ending] {"position":"5325,500","size":"200,100"}
+[NOTE]
+The wedding goes off without a hitch; the Witch fails to take revenge, and the happiest day takes place.
+[continue]
+
+
+
+:: Arnecca parenthetical {"position":"1375,275","size":"100,100"}
+*Arnecca*. Now there's a place she hadn't thought of in a while. Fields of jogao stalks stretching as far as one could see. Bustle around the theater, a barker announcing colorful slogans and deals at the people coming and going up the thoroughfare. Craftspeople selling ceramic goods, exotic crops, along sunkissed avenues. 
+
+Not too distant, and, given the teleportation network, not far -- but then again, everywhere from here felt too far, at least in the normal way, to the witch. Maybe she would visit. The coffee was good, made her think of her real home.
+
+Oh, but that makes her think of her "*real*" home... now there's a bad taste.
+
+>[[Check the time...]] 
+
+
+:: Bedroom {"position":"1200,650","size":"200,200"}
 [if  _bedroomclean]
 It looked better. Not great, but better, *all that is holy*.
 
@@ -34,7 +79,6 @@ Hardly what one would know as the bedroom of a mythological witch...
 The room was filled with landmines. With *stuff*. Everything else is a blur...
 
 
-
 [unless hasGlasses]
 > [[Where's her glasses...]]
 [if hasGlasses; unless _sozusaved]
@@ -45,11 +89,7 @@ The room was filled with landmines. With *stuff*. Everything else is a blur...
 
 
 
-:: Bedroom Mess {"position":"1900,1325","size":"100,100"}
-
-
-
-:: Bedroom State {"position":"1600,900","size":"100,100"}
+:: Bedroom State {"position":"1200,850","size":"100,100"}
 
 {embed passage:'Bedside Table Description'}
 
@@ -57,7 +97,7 @@ The room was filled with landmines. With *stuff*. Everything else is a blur...
 
 {embed passage:'Mess Description'}
 
-* There was also a [[crate]] against the back wall: it {reveal link: 'had something written on it', text:'was affectionately labeled “*for scarecrows*”.'} 
+* There was also a [[crate]] against the back wall: it {reveal link: 'had something written on it.', text:'was affectionately labeled “*for scarecrows*”.'} 
 
 [NOTE]
 REMINDERS!
@@ -71,14 +111,14 @@ She yearned to start her day...
 
 
 
-:: Bedroom calendar {"position":"1875,775","size":"100,100"}
+:: Bedroom calendar {"position":"1650,775","size":"100,100"}
 The calendar on the wall was enshrined in leather. It *was* a real calendar. Though Dorie didn't know quite how it kept extending on and on...
 
 The date was the midst of Alssad, '84. Middle of summer, and middle of the year, almost to the day.
 
 [if _calendarmarked]
 
-
+Circled was the date... "1st year".
 
 [else]
 > [[Mark the date.]]
@@ -87,11 +127,11 @@ The date was the midst of Alssad, '84. Middle of summer, and middle of the year,
 > {back link, label: 'Back to the bedroom...'}
 
 
-:: Bedroom candle {"position":"1762.5,1200","size":"100,100"}
+:: Bedroom candle {"position":"1125,1500","size":"100,100"}
 
 
 
-:: Bedside Table Description {"position":"1475,1050","size":"100,100"}
+:: Bedside Table Description {"position":"1050,1100","size":"100,100"}
 Besides an open [[window->Witch's bedroom window]] was the witch's ratty cotton [[bed->Witch's bed]]. 
 
 On her [[bedside table]],
@@ -100,18 +140,18 @@ On her [[bedside table]],
  the witch had left a [[candle->Bedroom candle]] burning, marking the hours of rest she'd gotten. It's brighter now. 
 [else]
  the candle had been extinguished. No more danger of it burning the house down.
-
+[continue]
 A [[calendar->Bedroom calendar]] on the wall over it marked the date... middle of summer.
 
 
-:: Call her name {"position":"850,400","size":"100,100"}
+:: Call her name {"position":"700,375","size":"100,100"}
 *...It came through pained, haggard breaths. He wants to hold her in his embrace. Can't muster the strength. Lung tissue slowly healing.*
 
 *The name {reveal link: 'has a vise grip on her', text: 'was something he gave her'}. It's burned in her memory. The way he said it.*
 
 *"{text input for: 'yourName'}..." his voice trembled. "What... happened...?"*
 
-*How did either of them survive, he wants to ask.*
+*How did either of them survive, he wants to ask. Can scarcely muster the strength for the first question...*
 
 *Her **first name** triggers something in her. In the haze and panic of the moment, she thinks she speaks to her patient.*
 
@@ -120,7 +160,7 @@ A [[calendar->Bedroom calendar]] on the wall over it marked the date... middle o
 >[[The memory hurts... enough...->Wake up]]
 
 
-:: Check the time... {"position":"1450,600","size":"100,100"}
+:: Check the time... {"position":"1175,375","size":"100,100"}
 _bedroomclean: false
 _candlelit: true
 _calendarmarked: false
@@ -136,10 +176,182 @@ Her fingers were searching the side-table for her glasses. The room was filled w
 
 She sighed, raised a hand...
 
-> [[and made the candle brighter]].
+> [[and made the candle brighter.]]
 
 
-:: Mark the date. {"position":"2000,900","size":"100,100"}
+:: Experimentation2 {"position":"1525,1150","size":"100,100"}
+At some point, of course, some of her ingredients may have wandered away. She remembered a bottle rolling out of the room... Existing tiny friends aside, maybe she made a tiny friend last night, out of feathers and ink. She hoped not. Arcsend Ranch had enough creeps for its size.  {reveal link:"But why...?", passage: "Experimentation3"}
+
+
+:: Experimentation3 {"position":"1425,1250","size":"100,100"}
+Most of the focus that night was spent futzing about with reckoning tiny changes, like the weight of a single feather, or changing the exact color of ink. The former was aimless experimentation, possibly a hope of figuring out a new material for spellcraft -- the latter was a convenience that she had messed around with too much. 
+
+Now, there was a bottle-shaped hole *in her desk*. Not exactly sure how *that* happened.  {reveal link:"And what's more...", passage:"Experimentation4"}
+
+
+:: Experimentation4 {"position":"1525,1250","size":"100,100"}
+She remembered taking up an old book, one which came from the Ranch itself to be sure, from the bedside table, and reckoning into existence that she had read the entire thing, like she was a schoolchild trying to cram before a book report -- and the whole thing, cover to cover, became utterly blank, its knowledge moved from page to mind wholecloth. Not even the title of the book remained.  Purely cut-and-paste... 
+
+The binding broke, blank paper spilled out over the room, across stain of wine and glass and wood. The knowledge she'd tried to reality-bend into herself... well, that was a forgone haze...
+
+
+
+:: INITIALIZE {"position":"675,125","size":"100,100"}
+debug: true
+yourName: 'Johanna'
+herName: 'Hanna'
+--
+
+[align center]
+For you.
+[continue]
+
+> [[S0<-~~START.~~]]
+[if debug]
+> [[S4_skip<-~~SKIP to SAN ARIAS.~~]]
+
+
+:: Jogues.Hanna {"position":"2850,975","size":"100,100"}
+[if _hasCurse == 1]
+
+>[[Use the curse on her...->Jogues.Hanna.CursedQ]]
+
+
+:: Jogues.Hanna.Cursed! {"position":"3100,1600","size":"100,100"}
+requiem: true
+--
+Hanna is laughing with her eyes, barely contained energy. Pure mania. The best day she's ever lived. Clearly something happened. The curse isn't taking right. There's...
+
+"Were you not... trying to help me, there?"
+
+Johanna bit her lip. "Are... are you serious?! I cursed you!"
+
+[todo]
+
+
+:: Jogues.Hanna.Cursed.IAm {"position":"3100,1475","size":"100,100"}
+
+
+
+:: Jogues.Hanna.Cursed.TheObvious {"position":"2975,1475","size":"100,100"}
+
+
+
+:: Jogues.Hanna.Cursed.WTF {"position":"3225,1475","size":"100,100"}
+
+
+
+:: Jogues.Hanna.Cursed0 {"position":"3000,1250","size":"100,100"}
+The scarecrows signalled the changing winds like flag-bearers... Her riding-boots clanked, the spurs resonating with the bustle of the festival outside. She could hear everything in a square mile, and she could harmonize with it... 
+
+The wind and rain and sun were flowing through her as one. The plains and her were ONE. 
+
+<`What's happening?`> The Witch heard {herName}'s alarmed thoughts from across the room, as her eyes darted this-way-and-that. <`It's all so... captivating... so pretty...`>
+
+It won't be for much longer.
+
+The witch's feet breach the dirt at water's edge, on the precipice of a lake of stars... shadow gathered around her as her bare hands collect star after star... she close her eyes to its whisper. When the Witch opens her eyes again, her vision fills with only red, and {herName}. 
+
+The words are effortless; the foundations of the rickety old fort quaking like a colossal earthquake.
+
+The witch's temper erupts, and her Gift cascades into an explosion of color, from her head to her heart and then through her mouth...
+
+>[[~~USE THE CURSE.~~->Jogues.Hanna.Cursed1]]
+
+
+:: Jogues.Hanna.Cursed1 {"position":"3100,1250","size":"100,100"}
+_hasCurse: 2
+--
+[align center]
+**"As the Witch of the Plains, sure as the star falls and the years turn, I curse you so that no man will love you -- *ever again*!"**
+[after 5 seconds]
+
+The temperature plummets several degrees. The curse seems to slice apart the very space between them, and the witch spat the phrase like she'd spoken them a million times: which, for all intents, she had. A lonely teardrop falls into the lake of stars. *Her* sorrow was *sown*. 
+
+Reality swayed underneath her. The tremendous weight of her soul, verdant and evanescent, coursed from the tip of her wand and seized upon Hanna in a moment, flooding her very heart with so much energy. 
+
+{herName}'s fate was engraved with this truth-from-fiction. No more love. No more happiest day. 
+
+~~PERFECT VICTORY.~~
+
+All the air shunted itself out of the fort in a violent instant, and as it coursed back in and repressurized, their ears pop harder than they ever had... 
+
+But the witch held her ground... 
+
+[continue]
+> [["Let this be a lesson to you..."->Jogues.Hanna.Cursed2]]
+>[["What? Not enough?"->Jogues.Hanna.Cursed2]]
+>[["Now, begone!"->Jogues.Hanna.Cursed2]]
+>[[...and she's already said enough.->Jogues.Hanna.Cursed2]]
+
+
+:: Jogues.Hanna.Cursed2 {"position":"2900,1350","size":"100,100"}
+And in that very moment, it was done. Both bewitcher and bewitched stood their breathless for a moment after. There was no shouting, just heartbeats beating faster. Sozu tightened around the witch's neck.
+
+"Oh, my gods," {herName} plainly said, after a moment. 
+
+But her tone of voice wasn't upset. She wasn't upset at all... 
+
+She wasn't... 
+
+...she was *elated*.
+
+{reveal link:"*...what...?*", passage:"Jogues.Hanna.Cursed2a"}
+
+
+
+:: Jogues.Hanna.Cursed2a {"position":"3000,1350","size":"100,100"}
+Her eyes lit up with an unprecedented joy. Sunlight and warmth streamed in through the open window...
+
+"That's all it took? ...Oh, *gods-alive*!" she said again, louder and more and more excited. Any disbelief was uprooted, replaced with relief. 
+
+"...For real?! You're not joking?"
+
+When the Witch of the Plains was again able to think clearly, she felt an embrace around her, heard a genuine, whole-body laugh. Felt streaming tears of joy. Like someone saved from the brink of death. The hug turns into a spin and then the bride-to-be is dancing, whirling away, laughing all the while...
+
+...
+
+[after 10 seconds]
+[[*...WHAAAT?!*->Jogues.Hanna.Cursed3]]
+
+
+:: Jogues.Hanna.Cursed3 {"position":"3100,1350","size":"100,100"}
+yourName: 'Johanna'
+herName: 'Hanna'
+--
+*What...? 'For real'?* The witch's mind swam, thoughts ate each other, baffled... 
+
+*What fate did I bring into being? Did I... do something... wrong, at all?*
+
+As though she could hear these thoughts, {herName} answered back by grabbing both of {yourName}'s wrists and staring gleefully, lovingly, into her eyes. 
+
+There was no hate to return... in fact...
+
+[align center]
+"...Witchy, you're my hero!"
+[continue]
+The words {yourName} never expected to hear...
+
+>[["I... am?"->Jogues.Hanna.Cursed.IAm]]
+>[["Of... course I am?"->Jogues.Hanna.Cursed.IAm]]
+>[["What in the Scarlet Skies has gotten into you?!"->Jogues.Hanna.Cursed.WTF]]
+>[["I just CURSED you!"->Jogues.Hanna.Cursed.TheObvious]]
+>[[{yourName} blinks at the girl, no older than her, threatening to kiss her...->Jogues.Hanna.Cursed!]]
+
+
+:: Jogues.Hanna.CursedQ {"position":"2900,1250","size":"100,100"}
+Leaves on the ground gathered at the fringes of the arcane circles. The fields bow their stems in reverence to the gathering energy in the midst of Fort Jogues, sigils in the grasses forming acre by acre, but only *just* forming. 
+
+Had the time arrived?
+
+[align center]
+~~ARE YOU SURE?~~
+[continue]
+>[[Absolutely, let's ruin her day.->Jogues.Hanna.Cursed0]]
+>{back link, label:"...Maybe not?"}
+
+
+:: Mark the date. {"position":"1750,775","size":"100,100"}
 Passing on feeling any kind of grim accomplishment, she glanced aside, picked up a feather, dipped it in one of the not-overturned inkwells, and marked the calendar with the date. If she was counting right, it was the Night to the ides… which meant one more night ‘til a whole year since she’d taken up residence in this place as the witch of the plains.
 
 She sighed. This would not be the day for mischief as she had hoped.
@@ -152,15 +364,34 @@ She knew well from the cobwebbed books that adorned her shelves that the date of
 complete section
 
 
-:: Mess Description {"position":"1825,950","size":"100,100"}
+:: Mess Description {"position":"1200,1125","size":"100,100"}
 [if _messyfloor]
-* Instead of walkable space, objects from [[last night’s experimentation]] were strewn about the creaking darkwood floor.  Potion bottles, feathers, bundles of loose hay and cloth; ink, alcohol, and alcohol-stained paper were the few of the [[random shit->Bedroom Mess]] she could name by sight. The rest might take more time to explain.
+* Instead of walkable space, objects from [[last night’s experimentation]] were strewn about the creaking darkwood floor.  Potion bottles, feathers, bundles of loose hay and cloth; ink, alcohol, and alcohol-stained paper constituted only part of the random shit she could name by sight. The rest might take more time to explain...
 
 [else]
 * *The mess had been managed*, the wrath of [[last night’s experimentation]] allowed to begin to heal. Objects were stowed away, the cloths packed neatly into a shoebox under the bed, the bottles either cleaned up or disposed of. Still in need of a deeper clean, but significantly less depressing.
 
 
-:: S1 {"position":"1250,300","size":"200,100"}
+:: S0 {"position":"600,275","size":"200,100"}
+*A dark chill...*
+
+*A loud **bang**. A yelping noise, from the yard.*
+
+*Her young heart pounding in her ears.* 
+
+*A knife. A closet. Something staring back. A hand clasped tightly around hers. A burning world. A lake. And... {reveal link:'The only survivor', text:'~~[[him]]~~'}.*
+
+A clattering in her soul pierces the void. Alarm rising and falling. Ding. Dong. 
+
+The darkness around her threatens to fade...
+
+[continue]
+> [[She keeps sleeping...->him]]
+> [[Who is she...?->Call her name]]
+> [[Wake up<-She *doesn't* need to hear this again... wake up...]] 
+
+
+:: S1 {"position":"1175,275","size":"200,100"}
 hasGlasses: false
 hands: 'empty'
 --
@@ -181,68 +412,133 @@ A subsiding night wind carried the smell of freshly planted staple crops in thro
 > [[Check the time...]]
 
 
-:: START {"position":"750,300","size":"200,100"}
-yourName: 'Johanna'
+:: S2 {"position":"2025,275","size":"100,100"}
+[NOTE]
+Reviewing the missive: getting ready to go.
 
---
 
-*A dark chill.*
+:: S3 {"position":"2325,275","size":"100,100"}
+[NOTE]
+Bright and beautfiul morning to teleport
 
-[after 1 second; append]
-*A loud **bang**. A yelping noise, from the yard.*
 
-[after 3 second; append]
-*Her young heart pounding in her ears.* 
 
-[after 5 seconds]
-*A knife. A closet. Something staring back. A hand clasped tightly around hers. A burning world. A lake. And... {reveal link:'The only survivor', text:'~~[[him]]~~'}.*
-
-[after 7 seconds]
-A clattering in her soul pierces the void. Alarm rising and falling. Ding. Dong. 
-
-The darkness around her threatens to fade...
-
+:: S3.9 {"position":"2450,425","size":"100,100"}
+[NOTE]
+SAN ARIAS ENTRY
 [continue]
-> [[She keeps sleeping...->him]]
-> [[Who is she...?->Call her name]]
-> [[Wake up<-She doesn't need to hear this again... wake up...]] 
 
 
-:: She had to go {"position":"850,500","size":"100,100"}
-*She turns. The man fades into darkness.*
+:: S4 {"position":"2775,275","size":"100,100"}
+[NOTE]
+The Harvest Festival. Each time the player takes some action, time is used: The player can take 8 actions in the four hours before the processional begins. At that time they must show to the wedding.
+
+Actions which use up time include
+- Completing the magical items (curse and glamour)
+- Sneaking around
+- Drawing a target to Fort Jogues
+- Confronting a target / using the curse
+- Eavesdropping on the targets
+- Knocking out a target / using the glamour
+
+Actions which do not use time
+- Speaking with non-targets
+- Reviewing known things
+- Exploring the festival
+- Collecting ingredients from the festival
+
+Actions which can result in the bad [[!REAPING ENDING]] here
+- Telling certain people in the thoroughfare about yourself
+- Causing a scene (certain choices)
+[continue]
+
+
+:: S4.END {"position":"3500,275","size":"100,100"}
+[NOTE]
+High noon.
+
+
+:: S4_skip {"position":"2775,150","size":"100,100"}
+
+The morning passed in waves, it would be just another routine day... *should have been* another routine day in the life of the young witch.
+
+If not for her. 
+
+How *dare* she have a wedding. This would not -- could not stand, not on the anniversary of the worst day.
+
+The Witch of the Plains -- in this time a young girl whose **first name**, {text input for: 'yourName'},  had been concealed under the alias of 'Dorotea' -- felt more determined than ever to ruin the day for the girl whom she blamed... 
+
+{text input for: 'herName'}... A young fiancée... What a loathsome creature to have **a similar name** to...  She would *pay* for causing the error which led the witch into this unfriendly, dangerous, and daunting role.
+
+***
+
+The plan was all she could think about as she stepped through the teleport's threshold and [[into the fields of San Arias.->S4]]
+
+
+:: S5 {"position":"3625,275","size":"100,100"}
+[NOTE]
+The processional.
+
+
+:: S5.SkipToEnd {"position":"3775,175","size":"200,100"}
+[NOTE]
+Allows the witch to witness a bad ending without seeing all of S5 or 6. Useful in case the player's already seen the end.
+
+
+:: S6 {"position":"4050,275","size":"100,100"}
+[NOTE]
+The wedding.
+
+
+:: S7 {"position":"4675,250","size":"100,100"}
+Endings
+
+
+:: She had to go {"position":"700,475","size":"100,100"}
+*She turns. The man on the ground fades into darkness.*
 
 [after 3 seconds; append]
-*Then, she takes her first step away.*
+*Then, she takes her first step away. If he calls after her now, she can no longer tell...*
 
 [after 5 seconds; append]
-*Her [[instantaneous movement]] carves a line through the fields.* 
+*Her [[instantaneous movement]] carves a line through the fields. The speed is exhilirating...* 
 
 [after 7 seconds; append]
-*Then, she takes her second step. She's already miles away. The third. The fourth. One foot in front of the other...*
+*Then, she takes her second step. She's already miles away. The third. The fourth. Nobody can catch her... One foot in front of the other...*
 
 [continue]
 > [[Wake up<-...and she's lying in bed...]] 
 
 
-:: Sozu's prison {"position":"1875,650","size":"100,100"}
+:: SkipBackwards {"position":"5725,675","size":"100,100"}
+[NOTE]
+Forfeits all progress but returns the player back to the start of the harvest festival.
+[continue]
 
 
 
-:: Wake up {"position":"950,300","size":"100,100"}
+:: Sozu's prison {"position":"1525,925","size":"100,100"}
+
+
+
+:: Wake up {"position":"800,275","size":"100,100"}
 She wants to wake up. She wants to.
 
 Better not, her subconscious memory whines. Ten gold says you'll not like what you see.
 
 > [[She's been through worse, though.->S1]]
+> [[Silence, memory!->S1]]
 > {back link, label:'Wait... what was that, before...?'}
 
 
-:: Where's her glasses... {"position":"1725,225","size":"100,100"}
+:: Where's her glasses... {"position":"1400,650","size":"100,100"}
 
 hasGlasses: true
 --
 
-They were right where she left them. Of course they were. Her pair of hexagonal glasses lied dejected on her bedside table, right next to the candle. A splotch of something purple across the sineglass lenses had her wiping them down with the edge of her ratty covers. 
+They were right where she left them. Of course they were. Her pair of hexagonal glasses lied dejected on her bedside table, right next to the candle.  
+
+A splotch of something purple across the sineglass lenses had her wiping them down with the edge of her ratty covers. 
 
 *Gods of all. I need to clean the craft room, too,* she groaned silently.
 
@@ -251,15 +547,15 @@ The glasses fit too snugly over the bridge of her nose. But at least she could s
 > [[Bedroom<-Now to surveill the mess at hand.]]
 
 
-:: Witch's bed {"position":"1512.5,1200","size":"100,100"}
+:: Witch's bed {"position":"1000,1475","size":"100,100"}
 
 
 
-:: Witch's bedroom window {"position":"1387.5,1200","size":"100,100"}
+:: Witch's bedroom window {"position":"875,1475","size":"100,100"}
 
 
 
-:: and made the candle brighter {"position":"1450,725","size":"100,100"}
+:: and made the candle brighter. {"position":"1275,375","size":"100,100"}
 Like second nature, her groggy voice spoke aloud, "~~UMARI.~~" The candle's flame glowed ever-brighter.
 
 Her mind filled with a shock of pain. Splitting hangover. Blinded by light. 
@@ -273,44 +569,52 @@ She’d not seen much of a reason to keep the house tidy, given… well, a decid
 >[[Oh, *gods*. How bad could it be?->Bedroom]]
 
 
-:: bedside table {"position":"1475,1425","size":"100,100"}
+:: bedside table {"position":"975,1700","size":"100,100"}
 
 
 
-:: crate {"position":"1950,525","size":"100,100"}
-A dozen sets of moth-eaten and wind-tattered spellcraft robes was posed as backdrop, like a laundry basket, to add insult to injury. 
+:: crate {"position":"1000,950","size":"100,100"}
+A dozen sets of moth-eaten and wind-tattered spellcraft robes was posed as backdrop, like a laundry basket, to add insult to injury. These were leftovers from {reveal link: 'the last handful of weeks', text: 'the slow process of reinforcing the farm’s protections with long treks around the perimeter'}. 
 
-These were leftovers from {reveal link: 'the last handful of weeks', text: 'the slow process of reinforcing the farm’s protections with long treks around the perimeter'}. The spellcraft robes were piled high in a wooden crate shoved against the opposite wall, which she’d needed to move elsewhere for some time.
+The spellcraft robes were piled high in a wooden crate shoved against the opposite wall, which she’d needed to move elsewhere for some time. Remarkably clean given... the state of everything else.
 
 > {back link, label: 'Back to the bedroom...'}
 
 
-:: him {"position":"750,400","size":"100,100"}
-*Her hands on his chest. A universe dividing between them. His warmth returns. Her prayers are answered. A wound closes. Patching him up.* 
+:: him {"position":"600,375","size":"100,100"}
+*Her hands on his chest. A universe dividing between them, physical contact a mere platitude. His warmth returns. Her prayers are answered. A wound closes. Patched up.* 
 
 *His eyes flutter open. Delirious. Mumbling something. {reveal link:'Like a bad hangover...', passage: 'parenthetical1'}*
 
 *But... [[She had to go]], or he'd never be safe again.*
 
+> [[The man is speaking coherently...->Call her name]] 
 > [[Wake up<-Not this again... Wake up...]] 
 
 
-:: instantaneous movement {"position":"950,400","size":"100,100"}
-*...The {reveal link:'pair of devices', text:'boots'} are laced just a little too tight around her ankles. Nagging at her. They've always been a loose fit... But she's stressed now. Hurts her legs to run...*
-
+:: instantaneous movement {"position":"800,375","size":"100,100"}
+*...The {reveal link:'device', text:'boots'} are laced just a little too tight around her ankles. Nagging at her. They've always been a loose fit... But she's stressed now. Hurts her legs to run... even magically...*
 
 *But she knows she needs to... and doesn't know where... She vanishes into the background...*
+
+*The background of the wicked memory...*
 
 > [[Wake up<-I need to wake up.]]
 
 
-:: last night’s experimentation {"position":"1775,1325","size":"100,100"}
+:: last night’s experimentation {"position":"1425,1150","size":"100,100"}
+It was a **wild** time. Witchcraft usually was.
+
+The smell of alcohol wafted through the air: the basis of many potions, and a good starting point for spellcraft, when consumed in moderation, of course. The witch had been a little rough with it -- at some point that night she was neither making potions nor making spells. {reveal link:"Instead...", passage: "Experimentation2"}
+
+Ow. **Ow.** Her head really hurts. The price was being *actively* paid...
+
+[[The witch opened her eyes, and was back in reality.->Bedroom]]
 
 
-
-:: parenthetical1 {"position":"750,500","size":"100,100"}
+:: parenthetical1 {"position":"600,475","size":"100,100"}
 Just enough to recognize her. [[Call her name]]. She wishes he hadn't.
 
 
-:: poppets {"position":"1950,1100","size":"100,100"}
+:: poppets {"position":"875,900","size":"100,100"}
 
